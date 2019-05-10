@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="desktopPane"  maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apps.client.controllers.DesktopController">
+   <bottom>
+      <AnchorPane prefHeight="145.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+
+             <ScrollPane layoutX="15.0" layoutY="80.0" prefHeight="240.0" prefWidth="584.0">
+                 <content>
+                     <AnchorPane fx:id="anchorDesktops" prefHeight="357.0" prefWidth="292.0" />
+                 </content>
+             </ScrollPane>
+
+             <Button fx:id="btnAdd" layoutX="549.0" layoutY="87.0" mnemonicParsing="false" onAction="#btnNavAdd" prefHeight="28.0" prefWidth="29.0" style="-fx-background-color: transparent;">
+                 <graphic>
+                     <ImageView fitHeight="28.0" fitWidth="29.0" layoutX="549.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                         <image>
+                             <Image url="@../images/cms/add.png" />
+                         </image>
+                     </ImageView>
+                 </graphic>
+                 <cursor>
+                     <Cursor fx:constant="HAND" />
+                 </cursor>
+             </Button>
+
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apps.client.controllers.AccountController">
+   <children>
+
+      <!-- login -->
+      <Label layoutX="47.0" layoutY="25.0" prefHeight="53.0" prefWidth="207.0" text="INLOGGEN" textFill="#545454">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtEmail" layoutX="47.0" layoutY="104.0" promptText="E-mailadres" />
+      <PasswordField fx:id="txtPassword" accessibleRole="PASSWORD_FIELD" layoutX="47.0" layoutY="152.0" promptText="Wachtwoord" />
+      <Button id="btnLogin" layoutX="47.0" layoutY="201.0" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #001236;" text="Inloggen" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+
+      <!-- register -->
+      <Label layoutX="351.0" layoutY="25.0" prefHeight="53.0" prefWidth="228.0" text="REGISTREREN" textFill="#545454">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Line endY="300.0" layoutX="291.0" layoutY="38.0" />
+      <TextField fx:id="txtRName" layoutX="363.0" layoutY="104.0" promptText="Naam" />
+      <TextField fx:id="txtREmail" layoutX="363.0" layoutY="152.0" promptText="E-mailadres" />
+      <PasswordField fx:id="txtRPassword" accessibleRole="PASSWORD_FIELD" layoutX="363.0" layoutY="201.0" promptText="Wachtwoord" />
+      <PasswordField fx:id="txtRPasswordConf" accessibleRole="PASSWORD_FIELD" layoutX="363.0" layoutY="249.0" promptText="Bevestig wachtwoord" />
+      <Button id="btnRegistreer" layoutX="364.0" layoutY="297.0" mnemonicParsing="false" onAction="#register" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #001236;" text="Registreer" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+
+   </children>
+</AnchorPane>

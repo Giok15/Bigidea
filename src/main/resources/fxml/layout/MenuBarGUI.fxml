@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorMenubar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="457.0" prefWidth="160.0" style="-fx-background-color: #001236;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apps.client.controllers.NavigationController">
+    <children>
+
+        <!-- menu pictures -->
+        <ImageView fx:id="imgAccount" fitHeight="92.0" fitWidth="93.0" layoutX="37.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/navigation/account.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="imgDesktop" fitHeight="92.0" fitWidth="93.0" layoutX="34.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/navigation/desktop.png" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="imgDesktopGroup" fitHeight="92.0" fitWidth="93.0" layoutX="32.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../images/navigation/group.png" />
+            </image>
+        </ImageView>
+
+        <!-- menu status + button navigation-->
+        <Button layoutX="20.0" layoutY="10.0" mnemonicParsing="false" onAction="#btnNavAccount" prefWidth="111.0" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fx:id="imgStatusAccount" fitHeight="104.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/status/nothing.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+        <Button layoutX="20.0" layoutY="131.0" mnemonicParsing="false" onAction="#btnNavDesktop" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fx:id="imgStatusDesktop" fitHeight="104.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/status/nothing.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button layoutX="20.0" layoutY="250.0" mnemonicParsing="false" onAction="#btnNavGroup" style="-fx-background-color: transparent;">
+            <graphic>
+                <ImageView fx:id="imgStatusGroup" fitHeight="104.0" fitWidth="106.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../images/status/denied.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+
+    </children>
+</AnchorPane>

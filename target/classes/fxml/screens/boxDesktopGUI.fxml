@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorDesktopBox" prefHeight="138.0" prefWidth="150.0" style="-fx-background-color: #001236; -fx-background-radius: 10;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apps.client.controllers.DesktopController">
+   <children>
+      <Label fx:id="lblTitle" layoutX="14.0" layoutY="14.0" text="Label" textFill="WHITE" />
+      <ImageView fx:id="imgDesktopBackground" fitHeight="84.0" fitWidth="222.0" layoutX="8.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../images/layout/default_background.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSelect" layoutX="-0.0" layoutY="0.0" mnemonicParsing="false" onAction="#btnNavSelectDesktop" prefHeight="138.0" prefWidth="150.0" style="-fx-background-color: Transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

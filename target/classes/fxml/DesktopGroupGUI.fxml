@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="desktopPane" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="458.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="apps.client.controllers.DesktopGroupController">
+   <bottom>
+      <AnchorPane fx:id="connectPane" prefHeight="225.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="138.0" layoutY="10.0" text="Vul de email van de aanmaker van de groep in">
+               <font>
+                  <Font size="15.0" />
+               </font></Label>
+            <TextField fx:id="txtEmail" layoutX="217.0" layoutY="46.0" />
+            <Button layoutX="241.0" layoutY="104.0" mnemonicParsing="false" onAction="#connectGroup" prefHeight="36.0" prefWidth="101.0" style="-fx-background-color: #001236;" text="Deelnemen" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
